@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────
+# Dr Drive Backend — Core Requirements (Windows compatible)
+# Install with: pip install -r requirements.txt
+# ─────────────────────────────────────────────────────────
+
+# Web framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+
+# Auth
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Database
+sqlalchemy==2.0.30
+alembic==1.13.1
+aiosqlite==0.20.0
+
+# Data (Windows wheels available)
+numpy==2.0.0
+pandas==2.2.2
+scikit-learn==1.5.0
+xgboost==2.0.3
+Pillow==10.3.0
+
+# HTTP / async
+aiofiles==23.2.1
+httpx==0.27.0
+
+# Config / utils
+python-dotenv==1.0.1
+pydantic==2.7.1
+pydantic-settings==2.2.1
+loguru==0.7.2
+
+# AWS S3 (optional — only needed for cloud storage)
+boto3==1.34.100
